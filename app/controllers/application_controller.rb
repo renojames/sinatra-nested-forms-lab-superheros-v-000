@@ -15,7 +15,6 @@ class App < Sinatra::Base
       params["team"]["members"].each do |hero_hash|
         @heroes << Hero.new(hero_hash)
       end
-
       binding.pry
     end
 
