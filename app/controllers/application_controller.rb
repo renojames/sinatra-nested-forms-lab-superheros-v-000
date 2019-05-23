@@ -16,7 +16,7 @@ class App < Sinatra::Base
         @heroes << Hero.new(hero_hash)
       end
 
-      binding.pry
+      erb :team
     end
 
 

@@ -5,6 +5,20 @@
     <title></title>
   </head>
   <body>
-    <p>Displays a team</p>
+
+    <h2>Your Team!</h2>
+    <h3>Team Name: <%= @team.name %></h3>
+    <h3>Team Motto: <%= @team.motto %></h3>
+    <br>
+
+    <h2>Your Heroes!</h2>
+    <% @heroes.each_with_index do |hero, i| %>
+      <h3>Hero <%= i + 1%></h3>
+      <h4>Hero Name: <%= hero.name%></h4>
+      <h4>Hero Power: <%= hero.power%></h4>
+      <h4>Hero Biography: <%= hero.bio%></h4>
+      <br>
+    <% end %>
+
   </body>
 </html>
