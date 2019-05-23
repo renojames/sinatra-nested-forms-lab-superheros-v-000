@@ -10,7 +10,7 @@
     <h3>Motto: <%= @team.motto %></h3>
 
     <h2>Your Heroes!</h2>
-    <% @heroes.each_with_index do |hero| %>
+    <% @heroes.each_with_index do |hero, i| %>
       <h4>Hero Name: <%= hero.name%></h4>
       <h4>Hero Power: <%= hero.power%></h4>
       <h4>Hero Biography: <%= hero.bio%></h4>
