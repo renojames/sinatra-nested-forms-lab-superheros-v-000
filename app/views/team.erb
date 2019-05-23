@@ -11,7 +11,9 @@
 
     <h2>Your Heroes!</h2>
     <% @heroes.each do |hero| %>
-      <h3><%= %></h3>
+      <h3>Name: <%= hero.name%></h3>
+      <h3>power: <%= hero.power%></h3>
+      <h3>Biography: <%= hero.bio%></h3>
     <% end %>
   </body>
 </html>
